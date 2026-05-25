@@ -12,7 +12,7 @@ peso = 90.5
 #numero complejo utilizando la notación de j para la parte imaginaria
 numero_complejo = 2 + 3j
 #Otro numero complejo con la función complex 
-otro_numero_complejo = complex(4, 3)
+otro_numero_complejo = complex(4, 3) 
 
 print(numero_complejo)
 print(otro_numero_complejo)
@@ -41,6 +41,15 @@ print(float(edad)) #Transforma el numero entero a flotante
 #Cadenas de texto
 carrera = "Ingenieria en Informatica"
 institucion = "Universidad de los Lagos"
+descripcion = """La asignatura de programacion se imparte en el primner semestre, tiene por objetivo entregar la base logica para cualquier estudiante"""
+
+#metodo de splitting (separar una cadena de texto en partes)
+
+print(carrera.split()) #Se genera una lista con las palabras de la cadena de texto carrera, utilizando el espacio como separador
+print(institucion.split())
+print(descripcion.split())
+
+
 print(carrera[0:11]) #Imprime los caracteres desde el indice 0 hasta el 10 (11 no incluido)
 print("hola" * 3)
 
@@ -60,3 +69,27 @@ lista_mixta = [1, "hola", 3.14, True] #arreglo de diferentes tipos de datos
 print(colores[0]) #Imprime el color en el indice 0 del arreglo colores
 print(numeros[-1]) #Imprime el ultimo numero del arreglo numeros
 print(lista_mixta)
+
+# Booleanos
+luz_electrica = True
+interruptor = False
+print(luz_electrica)
+print(interruptor)
+
+print(f" El tipo de dato es {type(colores)}") #Imprime el tipo de dato de la variable carrera
+
+#metodo TYPE permite conocer el tipo de dato de una variable
+print(f"El tipo de dato es {type(numero_complejo)}") #Imprime el tipo de dato de la variable numero_complejo
+print ("------------ evaluando datos booleanos ------------")
+print (bool(1))
+print(bool(0))
+print(bool(""))
+print(bool("true"))
+print(bool(4000))
+ 
+ 
+# Evaluando numeros con operadores de comparacion
+
+print(100>50)
+print(10==10)
+print(20<0)
