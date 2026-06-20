@@ -54,8 +54,10 @@ ramos.sort(key=len)
 print(ramos)
 
 #extender una lista a partir de otra
-ramos_segundo_semestre = ("Ciudadania, Algebra, introduccion a la Fisica")
+ramos_segundo_semestre = ["Ciudadania", "Algebra", "Introduccion a la Fisica"]
 print(ramos_segundo_semestre)
 
-#ramos.extend(ramos_segundo_semestre)
-#print(ramos)
+ramos.extend(ramos_segundo_semestre)
+print(ramos)
+
+print(ramos_segundo_semestre.index("Algebra"))
